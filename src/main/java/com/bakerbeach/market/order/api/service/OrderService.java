@@ -14,13 +14,19 @@ public interface OrderService {
 
 	String getNextOrderId(ShopContext shopContext) throws OrderServiceException;
 
+	@Deprecated
 	Order cancelOrder(String orderId) throws OrderServiceException;
+
+	Order cancelOrder(String shopCode, String orderId) throws OrderServiceException;
 
 	OrderList findOrderByCustomerIdAndShopCode(String customerId, String shopCode) throws OrderServiceException;
 
 	OrderList findOrderByCustomerIdAndShopCode(String customerId, String shopCode, Integer limit, Integer offset)
 			throws OrderServiceException;
 
+	@Deprecated
 	Order findOrderById(String orderId) throws OrderServiceException;
+
+	Order findOrderById(String shopCode, String orderId) throws OrderServiceException;
 
 }
