@@ -19,10 +19,11 @@ public interface OrderService {
 
 	Order cancelOrder(String shopCode, String orderId) throws OrderServiceException;
 
+	@Deprecated
 	OrderList findOrderByCustomerIdAndShopCode(String customerId, String shopCode) throws OrderServiceException;
 
-	OrderList findOrderByCustomerIdAndShopCode(String customerId, String shopCode, Integer limit, Integer offset)
-			throws OrderServiceException;
+	OrderList findOrderByCustomerIdAndShopCode(String customerId, String shopCode, String sort, Integer limit,
+			Integer offset) throws OrderServiceException;
 
 	@Deprecated
 	Order findOrderById(String orderId) throws OrderServiceException;

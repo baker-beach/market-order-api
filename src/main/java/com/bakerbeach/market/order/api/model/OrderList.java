@@ -7,9 +7,9 @@ import com.bakerbeach.market.core.api.model.Order;
 
 public interface OrderList {
 
-	Integer getCount();
+	Long getCount();
 
-	void setCount(Integer count);
+	void setCount(Long count);
 	
 	List<Order> getOrders();
 
