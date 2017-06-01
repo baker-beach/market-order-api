@@ -30,4 +30,7 @@ public interface OrderService {
 
 	Order findOrderById(String shopCode, String orderId) throws OrderServiceException;
 
+	OrderList findOrderByStatusAndShopCode(String status, String shopCode, String sort, Integer limit, Integer offset)
+			throws OrderServiceException;
+
 }
