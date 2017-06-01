@@ -108,5 +108,7 @@ public interface Order {
 
 	Total newTotal(Total source);
 
+	List<Invoice> getInvoices();
+
 
 }
