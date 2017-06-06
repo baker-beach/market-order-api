@@ -2,6 +2,7 @@ package com.bakerbeach.market.order.api.model;
 
 import java.math.BigDecimal;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import com.bakerbeach.market.core.api.model.TaxCode;
@@ -228,7 +229,6 @@ public interface OrderItem {
 
 	}
 	
-	
-
+	List<PacketItemInfo> getPacketItemInfos();
 
 }

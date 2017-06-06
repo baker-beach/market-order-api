@@ -2,9 +2,10 @@ package com.bakerbeach.market.order.api.model;
 
 import java.math.BigDecimal;
 
-public interface PackageItemInfo {
-	
+public interface PacketItemInfo {
+
 	BigDecimal getQuantity();
-	String getPackageReference();
+
+	String getPaketReference();
 
 }

@@ -110,7 +110,7 @@ public interface Order {
 
 	List<Invoice> getInvoices();
 	
-	List<Package> getPackages();
+	List<Packet> getPackets();
 
 
 }
