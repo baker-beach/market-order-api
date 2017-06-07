@@ -33,4 +33,6 @@ public interface OrderService {
 	OrderList findOrderByStatusAndShopCode(String status, String shopCode, String sort, Integer limit, Integer offset)
 			throws OrderServiceException;
 
+	void saveOrUpdate(Order order) throws OrderServiceException;
+
 }

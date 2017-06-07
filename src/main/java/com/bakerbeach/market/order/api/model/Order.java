@@ -17,6 +17,7 @@ public interface Order {
 	public final static String STATUS_SUBMIT = "submit";
 	public final static String STATUS_ACCEPTED = "accepted";
 	public final static String STATUS_CANCELED = "canceled";
+	public final static String STATUS_LOGISTIC = "logistic";
 
 	String getId();
 
