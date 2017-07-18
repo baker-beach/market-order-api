@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import com.bakerbeach.market.core.api.model.ProductType;
 import com.bakerbeach.market.core.api.model.TaxCode;
 
 public interface OrderItem {
@@ -231,4 +232,7 @@ public interface OrderItem {
 	
 	List<PacketItemInfo> getPacketItemInfos();
 
+	ProductType getType();
+	
+	void setType(ProductType productType);
 }
