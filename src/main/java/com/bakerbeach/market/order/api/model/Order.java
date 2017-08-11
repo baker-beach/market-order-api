@@ -18,6 +18,8 @@ public interface Order {
 	public final static String STATUS_ACCEPTED = "accepted";
 	public final static String STATUS_CANCELED = "canceled";
 	public final static String STATUS_LOGISTIC = "logistic";
+	public final static String STATUS_PART_SENT = "part sent";
+	public final static String STATUS_SENT = "sent";
 
 	String getId();
 
