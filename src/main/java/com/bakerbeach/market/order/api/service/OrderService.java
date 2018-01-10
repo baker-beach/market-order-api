@@ -1,9 +1,11 @@
 package com.bakerbeach.market.order.api.service;
 
+import java.util.Map;
+
 import com.bakerbeach.market.core.api.model.Cart;
 import com.bakerbeach.market.core.api.model.Customer;
-import com.bakerbeach.market.core.api.model.Order;
 import com.bakerbeach.market.core.api.model.ShopContext;
+import com.bakerbeach.market.order.api.model.Order;
 import com.bakerbeach.market.order.api.model.OrderList;
 
 public interface OrderService {
@@ -29,5 +31,12 @@ public interface OrderService {
 	Order findOrderById(String orderId) throws OrderServiceException;
 
 	Order findOrderById(String shopCode, String orderId) throws OrderServiceException;
+
+	OrderList findOrderByStatusAndShopCode(String status, String shopCode, String sort, Integer limit, Integer offset)
+			throws OrderServiceException;
+
+	void saveOrUpdate(Order order) throws OrderServiceException;
+	
+	OrderList findOrdersByFilters(String shopCode, Map<String,Object> filters) throws OrderServiceException;
 
 }
